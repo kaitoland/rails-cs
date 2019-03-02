@@ -1565,6 +1565,7 @@ code {
 .cols-grids {
     padding: 1em 1em;
     margin-bottom: 0px;
+    min-height: 700px;
     background: none;
     box-shadow: none;
 }
