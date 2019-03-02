@@ -1,0 +1,12 @@
+<div class="cols-grids panel-widget">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @category.name %>
+</p>
+
+<%= link_to '編集', edit_category_path(@category),class: 'btn btn-warning' %> |
+<%= link_to '一覧', categories_path,class: 'btn btn-default' %>
+
+</div>
