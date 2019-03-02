@@ -71,22 +71,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="clearfix"> </div>
         </div>
         <!--heder end here-->
-        <!-- script-for sticky-nav -->
-        <script>
-          $(document).ready(function() {
-            var navoffeset=$(".header-main").offset().top;
-            $(window).scroll(function(){
-              var scrollpos=$(window).scrollTop();
-              if(scrollpos >=navoffeset){
-                $(".header-main").addClass("fixed");
-              }else{
-                $(".header-main").removeClass("fixed");
-              }
-            });
-
-          });
-        </script>
-        <!-- /script-for sticky-nav -->
         <!--inner block start here-->
         <div class="inner-block">
           <!--market updates updates-->
@@ -207,16 +191,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!--inner block end here-->
         <!--copy rights start here-->
         <div class="copyrights">
-          <p>© 2016 Shoppy. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+          <p>© 2019 fukagawa.k. All Rights Reserved
         </div>
         <!--COPY rights end here-->
       </div>
     </div>
     <!--slider menu-->
     <div class="sidebar-menu">
-      <div class="logo"> <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="#"> <span id="logo" ></span>
-        <!--<img id="logo" src="" alt="Logo"/>-->
-      </a> </div>
       <div class="menu">
         <ul id="menu" >
           <li id="menu-home" ><a href="index.html"><i class="fa fa-home"></i><span>ホーム</span></a></li>
