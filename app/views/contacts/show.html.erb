@@ -1,0 +1,41 @@
+<div class="cols-grids panel-widget">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>お問い合わせ日時:</strong>
+  <%= @contact.contact_date %>
+</p>
+
+<p>
+  <strong>担当者:</strong>
+  <%= @contact.staff %>
+</p>
+
+<p>
+  <strong>件名:</strong>
+  <%= @contact.title %>
+</p>
+
+<p>
+  <strong>ステータス:</strong>
+  <%= @contact.status %>
+</p>
+
+<p>
+  <strong>カテゴリー:</strong>
+  <%= @contact.category %>
+</p>
+
+<p>
+  <strong>概要:</strong>
+  <%= @contact.summary %>
+</p>
+
+<p>
+  <strong>予定:</strong>
+  <%= @contact.plan %>
+</p>
+
+<%= link_to '編集', edit_contact_path(@contact),class: 'btn btn-warning' %> |
+<%= link_to '一覧', contacts_path,class: 'btn btn-default' %>
+</div>
