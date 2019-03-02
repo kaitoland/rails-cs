@@ -1,0 +1,52 @@
+<%= form_with(model: contact, local: true) do |form| %>
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :お問い合わせ日時 %>
+    <%= form.date_select :contact_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :担当者 %>
+    <%= form.text_field :staff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :件名 %>
+    <%= form.text_field :title, :size=>"60x10"%>
+  </div>
+
+  <div class="field">
+    <%= form.label :ステータス %>
+    <%= form.text_field :status,:size=>"50x10" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :カテゴリ %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :概要 %>
+    <%= form.text_area:summary,:size=>"30x10" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :予定 %>
+    <%= form.text_area :plan,:size=>"30x10" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

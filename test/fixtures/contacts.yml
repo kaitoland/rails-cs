@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contact_date: 2019-03-02
+  staff: MyString
+  title: MyString
+  status: MyString
+  category: MyString
+  summary: MyString
+  plan: MyString
+
+two:
+  contact_date: 2019-03-02
+  staff: MyString
+  title: MyString
+  status: MyString
+  category: MyString
+  summary: MyString
+  plan: MyString
