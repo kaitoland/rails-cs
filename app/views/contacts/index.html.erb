@@ -5,6 +5,7 @@
     <table>
       <thead>
         <tr>
+          <th class="col-xs-1 col-ms-1 col-md-1">id</th>
           <th class="col-xs-2 col-ms-2 col-md-2">日時</th>
           <th class="col-xs-1 col-ms-1 col-md-1">担当者</th>
           <th class="col-xs-4 col-ms-4 col-md-4">件名</th>
@@ -16,6 +17,7 @@
       <tbody>
         <% @contacts.each do |contact| %>
         <tr>
+          <td class="col-xs-1 col-ms-1 col-md-1" align="left"><%= contact.id %></td>
           <td class="col-xs-2 col-ms-2 col-md-2" align="left"><%= contact.contact_date %></td>
           <td class="col-xs-1 col-ms-1 col-md-1" align="left"><%= contact.staff %></td>
           <td class="col-xs-4 col-ms-4 col-md-4" align="left"><%= contact.title %></td>

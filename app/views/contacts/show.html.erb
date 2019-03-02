@@ -36,6 +36,8 @@
   <%= @contact.plan %>
 </p>
 
+<%=link_to "対応を作成する", new_respond_path(:contact_id => @contact.id)%>
+
 <%= link_to '編集', edit_contact_path(@contact),class: 'btn btn-warning' %> |
 <%= link_to '一覧', contacts_path,class: 'btn btn-default' %>
 </div>

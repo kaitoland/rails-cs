@@ -1,0 +1,42 @@
+<div class="cols-grids panel-widget">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>お問い合わせid</strong>
+  <%= @respond.contact_id %>
+</p>
+
+<p>
+  <strong>対応日時</strong>
+  <%= @respond.respond_date %>
+</p>
+
+<p>
+  <strong>担当者</strong>
+  <%= @respond.staff %>
+</p>
+
+<p>
+  <strong>件名</strong>
+  <%= @respond.title %>
+</p>
+
+<p>
+  <strong>要点</strong>
+  <%= @respond.point %>
+</p>
+
+<p>
+  <strong>対処</strong>
+  <%= @respond.deal %>
+</p>
+
+<p>
+  <strong>文面</strong>
+  <%= @respond.wording %>
+</p>
+
+<%= link_to '編集', edit_respond_path(@respond) ,class: 'btn btn-warning' %> |
+<%= link_to '一覧', responds_path,class: 'btn btn-default'  %>
+
+</div>
