@@ -1,0 +1,15 @@
+current directory: /Users/kaito/develop/ruby/rails/rails-cs/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/Users/kaito/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20190302-94319-17wa9nr.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kaito/develop/ruby/rails/rails-cs/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/kaito/develop/ruby/rails/rails-cs/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/kaito/develop/ruby/rails/rails-cs/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190302-94319-v7e7cv/bindex
