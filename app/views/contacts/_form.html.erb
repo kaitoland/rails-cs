@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :担当者 %>
-    <%= form.text_field :staff %>
+    <%= form.collection_select :staff , Staff.all,:name,:name,:prompt => "選択してください" %>
   </div>
 
   <div class="field">
