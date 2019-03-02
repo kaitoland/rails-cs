@@ -25,7 +25,6 @@ class RespondsController < ApplicationController
   # POST /responds
   # POST /responds.json
   def create
-    binding.pry
     @respond = Respond.new(respond_params)
 
     respond_to do |format|
