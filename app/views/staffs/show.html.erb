@@ -16,6 +16,7 @@
   <%= @staff.tel %>
 </p>
 
-<%= link_to 'Edit', edit_staff_path(@staff) %> |
-<%= link_to 'Back', staffs_path %>
+<%= link_to '編集', edit_staff_path(@staff) ,class: 'btn btn-warning'%> |
+<%= link_to '一覧へ戻る', staffs_path ,class: 'btn btn-default' %>
+
 </div>
