@@ -1,0 +1,52 @@
+<%= form_with(model: respond, local: true) do |form| %>
+  <% if respond.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(respond.errors.count, "error") %> prohibited this respond from being saved:</h2>
+
+      <ul>
+      <% respond.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :contact_id %>
+    <%= form.number_field :contact_id , :value =>@cid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :respond_date %>
+    <%= form.date_select :respond_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staff %>
+    <%= form.text_field :staff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :point %>
+    <%= form.text_field :point %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deal %>
+    <%= form.text_field :deal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wording %>
+    <%= form.text_field :wording %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

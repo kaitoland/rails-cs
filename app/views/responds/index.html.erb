@@ -1,0 +1,41 @@
+<div class="cols-grids panel-widget">
+<p id="notice"><%= notice %></p>
+
+<h1>Responds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contact</th>
+      <th>Respond date</th>
+      <th>Staff</th>
+      <th>Title</th>
+      <th>Point</th>
+      <th>Deal</th>
+      <th>Wording</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @responds.each do |respond| %>
+      <tr>
+        <td><%= respond.contact_id %></td>
+        <td><%= respond.respond_date %></td>
+        <td><%= respond.staff %></td>
+        <td><%= respond.title %></td>
+        <td><%= respond.point %></td>
+        <td><%= respond.deal %></td>
+        <td><%= respond.wording %></td>
+        <td><%= link_to 'Show', respond %></td>
+        <td><%= link_to 'Edit', edit_respond_path(respond) %></td>
+        <td><%= link_to 'Destroy', respond, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Respond', new_respond_path %>
+</div>

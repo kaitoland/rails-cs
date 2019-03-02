@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contact_id: 1
+  respond_date: 2019-03-03
+  staff: MyString
+  title: MyString
+  point: MyString
+  deal: MyString
+  wording: MyString
+
+two:
+  contact_id: 1
+  respond_date: 2019-03-03
+  staff: MyString
+  title: MyString
+  point: MyString
+  deal: MyString
+  wording: MyString

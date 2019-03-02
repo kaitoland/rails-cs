@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @respond.contact_id %>
+</p>
+
+<p>
+  <strong>Respond date:</strong>
+  <%= @respond.respond_date %>
+</p>
+
+<p>
+  <strong>Staff:</strong>
+  <%= @respond.staff %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @respond.title %>
+</p>
+
+<p>
+  <strong>Point:</strong>
+  <%= @respond.point %>
+</p>
+
+<p>
+  <strong>Deal:</strong>
+  <%= @respond.deal %>
+</p>
+
+<p>
+  <strong>Wording:</strong>
+  <%= @respond.wording %>
+</p>
+
+<%= link_to 'Edit', edit_respond_path(@respond) %> |
+<%= link_to 'Back', responds_path %>
