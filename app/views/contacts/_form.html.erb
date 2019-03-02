@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :カテゴリ %>
-    <%= form.text_field :category %>
+    <%= form.collection_select :category, Category.all,:name,:name,:prompt => "選択してください" %>
   </div>
 
   <div class="field">
