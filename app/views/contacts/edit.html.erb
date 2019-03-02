@@ -1,6 +1,7 @@
-<h1>Editing Contact</h1>
-
+<h1>&nbsp;お問い合わせ編集</h1>
+<div class="cols-grids panel-widget">
 <%= render 'form', contact: @contact %>
 
-<%= link_to 'Show', @contact %> |
-<%= link_to 'Back', contacts_path %>
+<%= link_to '詳細', @contact ,class: 'btn btn-info'%> |
+<%= link_to '一覧', contacts_path ,class: 'btn btn-default'%>
+</div>

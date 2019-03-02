@@ -21,17 +21,16 @@
           <td class="col-xs-4 col-ms-4 col-md-4" align="left"><%= contact.title %></td>
           <td class="col-xs-2 col-ms-2 col-md-2" align="left"><%= contact.status %></td>
           <td class="col-xs-2 col-ms-2 col-md-2" align="left"><%= contact.category %></td>
-          <td><%= link_to '詳細を確認', contact %></td>
-          <td><%= link_to '編集', edit_contact_path(contact) %></td>
-          <td><%= link_to '削除', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to '詳細を確認', contact ,class: 'btn btn-info'%></td>
+          <td><%= link_to '編集', edit_contact_path(contact) ,class: 'btn btn-warning'%></td>
+          <td><%= link_to '削除', contact, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'%></td>
         </tr>
         <% end %>
       </tbody>
     </table>
 
     <br>
-
-    <%= link_to 'お問い合わせの新規作成', new_contact_path %>
+    <%= link_to 'お問い合わせの新規作成', new_contact_path ,class: 'btn btn-success'%>
   </div>
 </div>
 
