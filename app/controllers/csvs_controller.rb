@@ -4,10 +4,14 @@ class CsvsController < ApplicationController
   end
 
   def export
-    binding.pry
+    Csv.export
   end
 
-  def contact_params
+  def show
+    redirect_to csvs_path
+  end
+
+  def csv_params
     params.permit(:url)
   end
 end
