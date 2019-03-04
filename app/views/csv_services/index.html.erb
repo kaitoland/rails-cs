@@ -1,0 +1,7 @@
+<div class="cols-grids panel-widget">
+  <%= link_to "CSV出力", export_csv_services_path(format: :csv), class: "btn btn-primary" %>
+<%= form_tag export_csv_services_path, method: :post do %>
+  <%= text_field_tag :url %>
+  <%= button_tag do %><span>スプレッドシートに出力する</span><% end %>
+<% end %>
+</div>
