@@ -1,0 +1,46 @@
+<div class="cols-grids panel-widget">
+<p>スタッフリストの取得</p>
+<%= form_tag export_csv_services_path(format: :csv), method: :post do %>
+  <%= text_field_tag :filename,"",size:"40",placeholder:"ファイル名を入力してください(.csvは不要)"%>
+  <%= button_tag do %><span>ダウンロード</span><% end %>
+<% end %>
+<br>
+<h1>機能開発中</h1>
+<br><br>
+<p>週間お問い合わせデータの取得</p>
+<%= form_tag export_csv_services_path(format: :csv), method: :post do %>
+  <%= text_field_tag :filename,"",size:"40",placeholder:"ファイル名を入力してください(.csvは不要)"%>
+  <%= button_tag do %><span>ダウンロード</span><% end %>
+<% end %>
+<br>
+<p>週間お問い合わせ対応データの取得</p>
+<%= form_tag export_csv_services_path(format: :csv), method: :post do %>
+  <%= text_field_tag :filename,"",size:"40",placeholder:"ファイル名を入力してください(.csvは不要)"%>
+  <%= button_tag do %><span>ダウンロード</span><% end %>
+<% end %>
+<br>
+<p>担当者別お問い合わせデータの取得</p>
+<%= form_tag export_csv_services_path(format: :csv), method: :post do %>
+  <%= text_field_tag :filename,"",size:"40",placeholder:"担当者を入力してください(.csvは不要)"%>
+  <%= button_tag do %><span>ダウンロード</span><% end %>
+<% end %>
+<br>
+<p>担当者別お問い合わせ対応データの取得</p>
+<%= form_tag export_csv_services_path(format: :csv), method: :post do %>
+  <%= text_field_tag :filename,"",size:"40",placeholder:"担当者を入力してください(.csvは不要)"%>
+  <%= button_tag do %><span>ダウンロード</span><% end %>
+<% end %>
+<br>
+<p>カテゴリ別お問い合わせデータの取得</p>
+<%= form_tag export_csv_services_path(format: :csv), method: :post do %>
+  <%= text_field_tag :filename,"",size:"40",placeholder:"カテゴリを入力してください(.csvは不要)"%>
+  <%= button_tag do %><span>ダウンロード</span><% end %>
+<% end %>
+<br>
+<p>カテゴリ別お問い合わせ対応データの取得</p>
+<%= form_tag export_csv_services_path(format: :csv), method: :post do %>
+  <%= text_field_tag :filename,"",size:"40",placeholder:"担当者を入力してください(.csvは不要)"%>
+  <%= button_tag do %><span>ダウンロード</span><% end %>
+<% end %>
+<br>
+</div>
