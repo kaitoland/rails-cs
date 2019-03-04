@@ -1,6 +1,7 @@
 <!--inner block start here-->
 <div class="cols-grids panel-widget">
-  <h2>お問い合わせ一覧</h2>
+  <%= link_to 'お問い合わせの新規作成', new_contact_path ,class: 'btn btn-success pull-right'%>
+  <h2 class=>お問い合わせ一覧</h2>
   <div class="chute chute-center text-center">
     <table>
       <thead>
@@ -32,7 +33,7 @@
     </table>
 
     <br>
-    <%= link_to 'お問い合わせの新規作成', new_contact_path ,class: 'btn btn-success'%>
+    <%= paginate @contacts %>
   </div>
 </div>
 
