@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   resources :csv_services do
     collection do
-      get 'export'
+      post 'export'
     end
   end
 end

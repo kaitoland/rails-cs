@@ -6,6 +6,7 @@ class CsvServicesController < ApplicationController
 
   def export
     @staffs = Staff.all
+    @fname=params[:filename]+".csv"
     respond_to do |format|
       format.html do
         #html用の処理を書く
@@ -22,7 +23,7 @@ class CsvServicesController < ApplicationController
         end
       end
       format.csv do
-        send_data csv_data, filename: "staff.csv", type: :csv
+        send_data csv_data, filename: @fname, type: :csv
       end
     end
   end
