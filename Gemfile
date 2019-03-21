@@ -69,6 +69,10 @@ group :development, :test do
 end
 gem 'high_voltage'
 gem 'google_drive'
+
+gem 'kaminari', '~> 0.17.0'
+
 group :production do
   gem 'pg'
 end
+

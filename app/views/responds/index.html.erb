@@ -1,6 +1,6 @@
 <div class="cols-grids panel-widget">
 <p id="notice"><%= notice %></p>
-
+<%= link_to '対応新規作成(お問い合わせ一覧の詳細から作成する方を推奨)', new_respond_path ,class: 'btn btn-success pull-right'%>
 <h2>お問い合わせ対応一覧</h2>
 
 <table>
@@ -30,8 +30,8 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to '対応新規作成(お問い合わせ一覧の詳細から作成する方を推奨)', new_respond_path ,class: 'btn btn-success'%>
+<div class="text-center">
+<%= paginate @responds %>
+</div>
 </div>

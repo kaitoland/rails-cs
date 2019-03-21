@@ -127,7 +127,7 @@ a:hover {
   position: absolute;
   float: left;
   width: 220px;
-  min-height: 700px;
+  min-height: 800px;
   top: 0px;
   left:0px;
   bottom: 0;
@@ -1565,7 +1565,7 @@ code {
 .cols-grids {
     padding: 1em 1em;
     margin-bottom: 0px;
-    min-height: 700px;
+    min-height: 800px;
     background: none;
     box-shadow: none;
 }

@@ -1,10 +1,10 @@
 class RespondsController < ApplicationController
   before_action :set_respond, only: [:show, :edit, :update, :destroy]
-
+  PER = 12
   # GET /responds
   # GET /responds.json
   def index
-    @responds = Respond.all
+    @responds = Respond.all.page(params[:page]).per(PER)
   end
 
   # GET /responds/1
